@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="./prog3.css">
+</head>
+<body>
+
+<div class="calculator">
+    <input id="result" type="text" class="display" placeholder="0" style="text-align: right;" readonly>
+    <div class="buttons">
+        <!-- Row 1 -->
+        <button onclick=display(7)>7</button>
+        <button onclick=display(8)>8</button>
+        <button onclick=display(9)>9</button>
+        <button class="operator" onclick=display('/')>/</button>
+        
+        <!-- Row 2 -->
+        <button onclick=display(4)>4</button>
+        <button onclick=display(5)>5</button>
+        <button onclick=display(6)>6</button>
+        <button class="operator" onclick=display('*')>*</button>
+
+        <!-- Row 3 -->
+        <button onclick=display(1)>1</button>
+        <button onclick=display(2)>2</button>
+        <button onclick=display(3)>3</button>
+        <button class="operator" onclick=display('-')>-</button>
+
+        <!-- Row 4 -->
+        <button onclick=display(0)>0</button>
+        <button onclick=display('.')>.</button>
+        <button onclick="back()">C</button>
+        <button class="operator" onclick=display('+')>+</button>
+        <button class="equal" onclick="equal()">=</button>
+        <button class="allclear" onclick="clearAll()">AC</button>
+    </div>
+</div>
+
+<!-- JavaScript to handle calculator functionality -->
+<script src="./prog3.js"></script>
+</body>
+</html>
